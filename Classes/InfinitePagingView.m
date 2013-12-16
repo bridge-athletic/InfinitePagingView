@@ -111,7 +111,7 @@
     _lastPageIndex = floor(_pageViews.count / 2);
     if (_scrollDirection == InfinitePagingViewHorizonScrollDirection) {
         _innerScrollView.contentSize = CGSizeMake(_pageViews.count * _innerScrollView.frame.size.width, self.frame.size.height);
-        _innerScrollView.contentOffset = CGPointMake(_pageSize.width * _lastPageIndex, 0.f);
+        _innerScrollView.contentOffset = CGPointMake(0.0f, 0.f);
     } else {
         _innerScrollView.contentSize = CGSizeMake(_innerScrollView.frame.size.width, _pageSize.height * _pageViews.count);
         _innerScrollView.contentOffset = CGPointMake(0.f, _pageSize.height * _lastPageIndex);
